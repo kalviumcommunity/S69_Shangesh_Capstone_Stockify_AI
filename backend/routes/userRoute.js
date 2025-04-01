@@ -16,7 +16,7 @@ router.get('/logout',isAuthenticatedUser, logoutUser);
 router.get('/me',isAuthenticatedUser, getUserDetails);
 
 // Update Password
-// router.put('/updateprofile',isAuthenticatedUser, updateProfile);
+router.put('/updateprofile',isAuthenticatedUser, updateProfile);
 
 // Route to check if user is authenticated
 router.get('/check-auth', isAuthenticatedUser, (req, res) => {
