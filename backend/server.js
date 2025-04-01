@@ -24,7 +24,7 @@ app.use(cors({
 app.use(express.json());
 app.use(cookieParser());
 
-// Routes Middleware
+// Routes Middlewares
 app.use('/api/v1/user', userRoutes);
 app.use('/api/v1/portfolio', PortfolioRoutes);
 
