@@ -50,7 +50,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <div className="absolute top-16 left-0 right-0 bg-white shadow-lg md:hidden z-10">
+        <div data-testid="mobile-menu" className="absolute top-16 left-0 right-0 bg-white shadow-lg md:hidden z-10">
           <nav className="flex flex-col space-y-4 py-4 px-8">
             <Link
               to="/"
