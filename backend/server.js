@@ -3,7 +3,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const app = express();
 const userRoutes = require("./routes/userRoute");
-const PortfolioRoutes = require("./routes/portfolioRoutes");
+// const PortfolioRoutes = require("./routes/portfolioRoutes");
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 
@@ -26,7 +26,7 @@ app.use(cookieParser());
 
 // Routes Middlewares
 app.use('/api/v1/user', userRoutes);
-app.use('/api/v1/portfolio', PortfolioRoutes);
+// app.use('/api/v1/portfolio', PortfolioRoutes);
 
 
 // DB connection
